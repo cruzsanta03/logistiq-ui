@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import QuoteFormInputs from "./QuoteFormInputs"
-import QuoteSummary from "./QuoteSummary"
-import QuoteHtmlPreview from "./QuoteHtmlPreview"
-import useQuoteCalculations from "./useQuoteCalculations"
-import { useQuoteEmail } from "./hooks/useQuoteEmail"
-import submitQuoteToApi from "../helpers/submitQuoteToApi"
-import { PDFDownloadLink } from "@react-pdf/renderer"
-import QuotePDF from "./QuotePDF"
+import { useEffect, useState } from "react";
+import QuoteFormInputs from "./QuoteFormInputs";
+import QuoteSummary from "./QuoteSummary";
+import QuoteHtmlPreview from "./QuoteHtmlPreview";
+import useQuoteCalculations from "./useQuoteCalculations";
+import { useQuoteEmail } from "./hooks/useQuoteEmail";
+import submitQuoteToApi from "../helpers/submitQuoteToApi";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import QuotePDF from "./QuotePDF";
+
 
 type FormState = {
     roundtrip: string
